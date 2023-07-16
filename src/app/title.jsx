@@ -10,10 +10,10 @@ function Title() {
         className="flex justify-between my-3 mx-1  @apply border border-[color:var(--grey-50,rgba(245,245,246,0.50))]
          shadow-[1px_1px_4px_0px_rgba(0,0,0,0.05)] 
         rounded-[35px] border-solid;
-  background: #fff; py-1"
+  background: #fff; py-1 "
       >
-        <Image src={Logo} className="rounded-[100px] ml-3" />
-        <Image src={Menu} className="mr-5 h-5 @apply relative top-2.5" />
+        <Image src={Logo} className="rounded-[100px] ml-3 md:ml-[50px]" />
+        <Image src={Menu} className="mr-5 h-5 @apply relative top-2.5 md:mr-[50px]" />
       </div>
     </>
   );

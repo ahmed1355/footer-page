@@ -6,7 +6,8 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #FAFAFB;;
+    background-color: #FAFAFB;
+    /* overflow: hidden; */
 }
 .Mont{
     font-family: var(--font-Montserrat);

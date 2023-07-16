@@ -85,9 +85,7 @@ function Section({ title, index, expandedIndex, toggleExpand }) {
     <div className="relative">
       <div
         className={`border-solid rounded-lg shadow-[1px_1px_4px_0px_rgba(0,0,0,0.05)] bg-white text-sm font-semibold text-black w-[363px]
-         ml-3 p-3 py-[10px] ${
-          isExpanded ? "overflow-y-auto max-h-80" : ""
-        }`}
+         ml-3 p-3 py-[10px] ${isExpanded ? "overflow-y-auto max-h-80" : ""}`}
       >
         <p className="cursor-pointer" onClick={() => toggleExpand(index)}>
           {title}
@@ -112,6 +110,7 @@ function Section({ title, index, expandedIndex, toggleExpand }) {
                 eligendi excepturi, nihil iste debitis p
               </p>
             </p>
+            <p className="my-4 text-[#2C6C7B] cursor-pointer">READ MORE</p>
           </div>
         )}
       </div>
