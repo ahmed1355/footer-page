@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "./assets/logo.png";
+import Logo from "./assets/Logo.png";
 import Menu from "./assets/menu.jpg";
 
 function Title() {
