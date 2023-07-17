@@ -84,9 +84,10 @@ function Footer() {
   return (
     <div className="mt-5">
       <div
-        className="mx-5 h-[300px] border-[color:var(--color-grey-100,#F5F5F6)] rounded-[32px] border-[1.5px] border-solid
+        className="mx-2 w-[350px] h-[300px] border-[color:var(--color-grey-100,#F5F5F6)] rounded-[32px] 
+        border-[1.5px] border-solid
        bg-white shadow-[1px_1px_4px_0px_rgba(0,0,0,0.05)] relative md:flex  
-       md:h-[150px]"
+       md:h-[150px] md:w-[1500px]"
       >
         <div className="absolute left-8 top-6">
           <p className="text-xs md:hidden">
@@ -121,13 +122,13 @@ function Footer() {
         </div>
         <div className="mt-4">
           <p
-            className="text-xs relative left-[25px] bottom-[40px] whitespace-nowrap text-[#2C6C7B] font-semibold tracking-widest
-          md:absolute ml-2 mt-[85px]"
+            className="text-xs  relative left-[25px] bottom-[35px] whitespace-nowrap text-[#2C6C7B] font-semibold tracking-widest
+          md:absolute ml-2 mt-[85px] md:bottom-4 "
           >
             GIVE FEEDBACK
           </p>
           <p
-            className="text-xs absolute top-[95px] left-[200px] text-[#2C6C7B] font-semibold tracking-widest
+            className="text-xs absolute top-[110px] left-[200px] text-[#2C6C7B] font-semibold tracking-widest
           md:hidden"
           >
             COLLABORATE
@@ -142,7 +143,7 @@ function Footer() {
         </div>
         <div>
           <div className="flex mx-8 mt-[10px] md:absolute md: left-[500px] bottom-[20px]">
-            <ul className="relative right-3 text-xs mt-2 md:right-[100px] bottom-[1px]">
+            <ul className="relative pb-4 right-3 text-xs  md:right-[100px] md:bottom-[1px]">
               <li className="font-semibold mb-1">Company</li>
               <li className="font-normal pb-1">About</li>
               <li className="pb-1">Careers</li>
@@ -180,20 +181,24 @@ function Footer() {
       <div
         className="flex justify-around mt-5 ml-5
   @apply border-[color:var(--color-grey-100,#F5F5F6)] rounded-3xl border-[1.5px] border-solid;
-  background: var(--color-white, #fff) md:mt-8 md:justify-end mr-14 mb-9 "
+  background: var(--color-white, #fff)  md:mt-8 md:justify-end md:mr-14 mb-9 "
       >
         <Image src={logo} className="md:absolute right-[1380px] " />
-        <Image src={fb} className="w-[32px] h-[32px] md:mr-[80px] " />
-        <Image src={twitter} className="w-[32px] h-[32px] md: relative right-[50px] " />
-        <Image src={insta} className="w-[32px] h-[32px] md: relative right-[30px]" />
-        <Image src={linkedin} className="w-[25px] h-[25px] mt-1" />
-      <p className="hidden text-center font-light mb-3 md:inline md:absolute right-[600px] ">
-      
-        @ Pneuma. All Rights Reserved.
-      </p>
+        <Image src={fb} className="w-[32px] absolute h-[32px] mr-[-55px] md:mr-[80px] md:static" />
+        <Image
+          src={twitter}
+          className="w-[32px] ml-6 h-[32px] md: relative right-[50px] md:ml-0"
+        />
+        <Image
+          src={insta}
+          className="w-[32px] mr-[-45px] h-[32px] md: relative right-[30px] md:mr-0 "
+        />
+        <Image src={linkedin} className="w-[25px] h-[25px] mt-1 " />
+        <p className="hidden text-center font-light mb-3  md:inline md:absolute right-[600px] ">
+          @ Pneuma. All Rights Reserved.
+        </p>
       </div>
       <p className="text-center font-light relative bottom-[20px]  md:hidden  ">
-      
         @ Pneuma. All Rights Reserved.
       </p>
     </div>
